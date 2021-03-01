@@ -15,11 +15,18 @@ class App extends Component {
       loading: true,
     });
     const res = await axios.get('https://api.github.com/users');
-    console.log(res.data);
-    this.setState({
-      loading: false,
-      users: res.data,
-    });
+    this.setState(
+      {
+        users: res.data,
+      },
+      () => {
+        setTimeout(() => {
+          this.setState({
+            loading: false,
+          });
+        }, 2500);
+      }
+    );
   }
 
   render() {
