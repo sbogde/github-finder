@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class Navbar extends Component {
   static defaultProps = {
     icon: 'far fa-angry',
     title: 'Some title',
+  };
+
+  static propTypes = {
+    icon: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
   };
 
   render() {
