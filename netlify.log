@@ -1,0 +1,57 @@
+PS C:\Users\sobogd\Documents\work-new\_tests\_packt\traversy\1-github-finder> netlify status
+──────────────────────┐
+ Current Netlify User │
+──────────────────────┘
+Name:  Sorin
+Email: sbogde@yahoo.com
+Teams:
+  Sorin's team: Collaborator
+ »   Warning: Did you run `netlify link` yet?
+ »   Error: You don't appear to be in a folder that is linked to a site
+PS C:\Users\sobogd\Documents\work-new\_tests\_packt\traversy\1-github-finder> netlify init
+? What would you like to do? +  Create & configure a new site
+? Team: Sorin's team
+Choose a unique site name (e.g. the-awesome-sbogde-site.netlify.app) or leave it blank for a random name. You can update the site name later.
+? Site name (optional): github-finder
+ »   Warning: github-finder.netlify.app already exists. Please try a different slug.
+Choose a unique site name (e.g. the-great-sbogde-site.netlify.app) or leave it blank for a random name. You can update the site name later.
+? Site name (optional): github-finder-packt
+
+Site Created
+
+Admin URL: https://app.netlify.com/sites/github-finder-packt
+URL:       https://github-finder-packt.netlify.app
+Site ID:   c96cb4bd-51ba-4fdc-a7df-68ff29113db5
+No configurator found for the provided git remote. Configuring manually...
+? Your build command (hugo build/yarn run build/etc): react-scripts build
+? Directory to deploy (blank for current dir): build
+? Netlify functions folder: netlify/functions
+
+Give this Netlify SSH public key access to your repository:
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDHxS+YN6y1QSuQllibeH7KOceJ27US9IiQL9ceRTTg0ZWQApBpYX0REbbUPpZYj/efhEut85X52OaWw3HI2XzvnP59POdLqaojDC07G+1ydi5Vq64dGFJeDbpg6263dVUXaQmw8szssLjLnUXYn1Y2Z7qgZXir5kAGrvKAImDfqHcK0/7m0pb5MZ25gucgivWBh9qO/jXycH4YrfndCZ8KUaW7sJwDC1ApT5M8/Pc4zBSypdMXWDMMNp+D0vYuM6nCVB7rh5CJTBExaX8hluPn8AHf2nZJ9j66YSTvbHqyE8Os7B5xJ9ujRBE0QnP/wRN1TzqOLbWnQ+EpvQuWV5qEBKnAxrLrQV7fJiHlWvL863qdXd93Qtq0ontBwqJY4ur8qFP2OaqaWEB4W9cRVq5yHpBV6dF2+QAYGjm5vannwhr16sz0Ek1srFN2yzDxXrkzEtxAIhCbCpE/0lXBaBgdloG5o3akyHmQHBUzprMI5rpCRVx6OMzhjxL358n7MGHqB3mCFr7IioBJGYyWGa3JBtAsyZrXAKGlX9ceYIOHuQsLQihYj6/o5Q3x44TUDhWrkGHX340ECRc8tH1lwT55g+L6hjVdG3uOCeH804+njrULAx+OHNtkEPaB7jOfnKPWNJ2Ll5s1Wsved1iNdPN/XIBrb2WSBgSRnhTecSnTdQ==
+
+
+? Continue? Yes
+? The SSH URL of the remote git repo: https://sbogde@bitbucket.org/sbogde/github-finder.git
+
+Configure the following webhook for your repository:
+
+
+https://api.netlify.com/hooks/604e2c25e8131850284bbf29
+
+
+? Continue? Yes
+
+Success! Netlify CI/CD Configured!
+
+This site is now configured to automatically deploy from bitbucket.org branches & pull requests
+
+Next steps:
+
+  git push       Push to your git repository to trigger new site builds
+  netlify open   Open the Netlify admin URL of your site
+
+PS C:\Users\sobogd\Documents\work-new\_tests\_packt\traversy\1-github-finder>
+
